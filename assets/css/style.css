@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,700&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+}
+body {
+   background-color: #f7f7f7;
+   font-family: 'Roboto', sans-serif;
+}
+section {
+   height: 90vh;
+   background: url(../img/titel-bild.jpg) center/cover no-repeat;
+   color: white;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+section span {
+   font-weight: 800;
+}
+section div h1 {
+   font-weight: 300;
+}
+section div a {
+   text-decoration: none;
+   color: white;
+   display: block;
+   margin-top: 20%;
+   font-size: 25px;
+}
+section div:nth-of-type(2) {
+   width: 95%;
+   bottom: 0;
+   text-align: right;
+   position: fixed;
+   color: black;
+   background-color: #fff;
+}
+main article:nth-of-type(1) {
+   margin-top: 10%;
+   text-align: center;
+}
+#greatDiv p {
+   margin-left: 30%;
+   padding-top: 20px;
+   width: 40%;
+}
+#greatDiv span {
+   color: rgb(47, 167, 207);
+}
+#doubleImg {
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: 15%;
+}
+#doubleImg img {
+   width: 40%;
+   margin-left: 5%;
+   margin-right: 5%;
+}
+main article:nth-of-type(2) {
+   margin-top: 10%;
+   text-align: center;
+}
+main article:nth-of-type(2) p {
+   width: 50%;
+   margin-left: 25%;
+   padding-top: 2%;
+}
+#gallery {
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: 10%;
+}
+#gallery img {
+   width: 40%;
+   margin-left: 5%;
+   margin-right: 5%;
+   margin-bottom: 3%;
+}
+.last {
+   width: 40%;
+}
+footer {
+   background-color: #fff;
+   margin-top: 20%;
+   display: grid;
+   grid-template-columns: 1fr 2fr 1fr;
+   grid-template-rows: 500px 200px;
+   grid-template-areas:
+      'colla colla colla'
+      'logo txt terms';
+   text-align: center;
+   align-items: center;
+}
+.colla {
+   grid-area: colla;
+   font-weight: 300;
+}
+#logo {
+   grid-area: logo;
+}
+#terms {
+   grid-area: terms;
+}
+#terms a {
+   text-decoration: none;
+   color: black;
+}
+#terms a:hover {
+   border-bottom: 1px solid black;
+}
+#txt {
+   grid-area: txt;
+}
